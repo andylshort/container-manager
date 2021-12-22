@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+
+        <style>
+            :root {
+                --hgt: 16px;
+                --button-padding: 2px;
+            }
+
+            * {
+                font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+            }
+
+            ul {
+                margin: 0;
+                padding: 0;
+                border: 1px solid #ccc;
+                width: 200px;
+            }
+            li:not(:last-child) {
+                border-bottom: 1px solid #ccc;
+            }
+            li.container-item {
+                display: flex;
+                justify-items: auto;
+            }
+
+            .container-icon {
+                padding: calc(4px + var(--button-padding));
+                font-size: var(--hgt);
+            }
+            .container-title {
+                padding: calc(4px + var(--button-padding));
+                flex-grow: 1;
+                font-size: var(--hgt);
+                /* line-height: var(--hgt); */
+            }
+            .container-action {
+                padding: 4px;
+            }
+            .container-action > input {
+                /* height: var(--hgt); */
+                padding: 2px;
+                color: white;
+                background-color: black;
+                border: 0px;
+                vertical-align: middle;
+                font-size: var(--hgt);
+            }
+        </style>
+    </head>
+    <body>
+        <ul id="containerList">
+            <li class="container-item">
+                <div class="container-icon">1</div>
+                <div class="container-title">Remove1</div>
+                <div class="container-action">
+                    <input type="button" value="Remove" />
+                </div>
+            </li>
+            <li class="container-item">
+                <div class="container-icon">2</div>
+                <div class="container-title">Remove1</div>
+                <div class="container-action">
+                    <input type="button" value="Remove" />
+                </div>
+            </li>
+            <li class="container-item">
+                <div class="container-icon">3</div>
+                <div class="container-title">Remove1</div>
+                <div class="container-action">
+                    <input type="button" value="Remove" />
+                </div>
+            </li>
+            <li class="container-item">
+                <div class="container-icon">4</div>
+                <div class="container-title">Remove1</div>
+                <div class="container-action">
+                    <input type="button" value="Remove" />
+                </div>
+            </li>
+        </ul>
+        <!-- <script type="text/javascript" src="sidebar.js"></script> -->
+    </body>
+</html>
